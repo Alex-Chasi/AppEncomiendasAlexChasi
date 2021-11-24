@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEncomiendasAlexChasi.Detalle">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Welcome to Xamarin.DETALLE!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+
+                <Entry x:Name="txtIdDetalle" IsVisible="False"/>
+                <Entry x:Name="txtDescripcion" Placeholder="Descripcion"/>
+                <Entry x:Name="txtTamanio" Placeholder="Tamanio"/>
+                <Entry x:Name="txtPeso" Placeholder="Peso" Keyboard="Numeric"/>
+                <Button x:Name="btnGuardar" Text="Registrar Detalle" Clicked="btnGuardar_Clicked"/>
+                <Button x:Name="btnActualizar" Text="Actualizar" Clicked="btnActualizar_Clicked" IsVisible="False"/>
+                <Button x:Name="btnEliminar" Text="Eliminar" Clicked="btnEliminar_Clicked" IsVisible="False"/>
+
+
+                <ListView x:Name="listaDetalle" ItemSelected="listaDetalle_ItemSelected" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding IdDetalle}" Grid.Row="0" Grid.Column="0" TextColor="Blue"/>
+                                    <Label Text="{Binding Descripcion}" Grid.Row="0" Grid.Column="1" TextColor="Blue"/>
+                                    <Label Text="{Binding Tamanio}" Grid.Row="0" Grid.Column="2" TextColor="Gray"/>
+                                    <Label Text="{Binding Peso}" Grid.Row="0" Grid.Column="3" TextColor="Gray"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEncomiendasAlexChasi.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Login" FontSize="Medium" HorizontalTextAlignment="Center"/>
+            <Image Source="encomienda.png"/>
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese el Usuario"/>
+            <Entry x:Name="txtContrasenia" Placeholder="Ingrese el Contrasenia" IsPassword="True"/>
+            <Button x:Name="btnIniciar" Text="Iniciar Sesion" Clicked="btnIniciar_Clicked"/>
+            <!--<Button x:Name="btnRegistrar" Text="Registrar" Clicked=""/>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

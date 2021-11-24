@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEncomiendasAlexChasi.Master"
+             Title="Master">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Remitente" x:Name="btnRemitente" BackgroundColor="White" Image="r.png" Clicked="btnRemitente_Clicked"/>
+            <Button Text="Destinatario" x:Name="btnDestinatario" BackgroundColor="White" Image="d.png" Clicked="btnDestinatario_Clicked"/>
+            <Button Text="Transporte" x:Name="btnTransporte" BackgroundColor="White" Image="t.png" Clicked="btnTransporte_Clicked"/>
+            <Button Text="Detalle" x:Name="btnDetalleEnvio" BackgroundColor="White" Image="detalle.png" Clicked="btnDetalleEnvio_Clicked"/>
+            <Button Text="Envio" x:Name="btnEnvio" BackgroundColor="White" Image="envio.png" Clicked="btnEnvio_Clicked"/>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
