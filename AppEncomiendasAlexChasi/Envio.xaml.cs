@@ -21,11 +21,13 @@ namespace AppEncomiendasAlexChasi
         {
             try
             {
-                //double iva = 0.12;
+                double iva = 0.12;
                 double v1 = Convert.ToDouble(txtValorEnvio.Text);
                 txtTotal.Text = v1.ToString();
                 txtSubTotal.Text = v1.ToString();
-                txtPrecioTotal.Text = v1.ToString();
+                //calculo 12%
+                double to = ((v1 * iva)+v1);
+                txtPrecioTotal.Text = to.ToString();
 
 
 
