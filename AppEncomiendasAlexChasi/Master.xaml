@@ -4,15 +4,19 @@
              x:Class="AppEncomiendasAlexChasi.Master"
              Title="Master">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
             <Button Text="Remitente" x:Name="btnRemitente" BackgroundColor="White" Image="r.png" Clicked="btnRemitente_Clicked"/>
             <Button Text="Destinatario" x:Name="btnDestinatario" BackgroundColor="White" Image="d.png" Clicked="btnDestinatario_Clicked"/>
             <Button Text="Transporte" x:Name="btnTransporte" BackgroundColor="White" Image="t.png" Clicked="btnTransporte_Clicked"/>
             <Button Text="Detalle" x:Name="btnDetalleEnvio" BackgroundColor="White" Image="detalle.png" Clicked="btnDetalleEnvio_Clicked"/>
             <Button Text="Envio" x:Name="btnEnvio" BackgroundColor="White" Image="envio.png" Clicked="btnEnvio_Clicked"/>
+                <!--<Button Text="PRUE" x:Name="btnQR" BackgroundColor="White" Image="envi" Clicked="btnQR_Clicked"/>-->
 
 
 
-        </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

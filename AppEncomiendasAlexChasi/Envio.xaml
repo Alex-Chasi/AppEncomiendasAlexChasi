@@ -4,9 +4,8 @@
              x:Class="AppEncomiendasAlexChasi.Envio">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
+            <StackLayout x:Name="stkQR" >
                 <Label Text="ENVIO"
-                VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
                 <!--INGRESAMOS EL GRID-->
                 <Grid>
@@ -54,8 +53,10 @@
 
                     <Button x:Name="btnGenerar" Text="Generar" Clicked="btnGenerar_Clicked" Grid.Row="8" Grid.Column="1"/>
 
+
                 </Grid>
             </StackLayout>
         </ScrollView>
+
     </ContentPage.Content>
 </ContentPage>

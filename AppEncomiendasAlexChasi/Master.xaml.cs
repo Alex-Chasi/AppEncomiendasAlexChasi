@@ -53,5 +53,13 @@ namespace AppEncomiendasAlexChasi
             await App.MasterDet.Detail.Navigation.PushAsync(new Envio());
 
         }
+        /*
+        private async void btnQR_Clicked(object sender, EventArgs e)
+        {
+            
+            App.MasterDet.IsPresented = false;
+            await App.MasterDet.Detail.Navigation.PushAsync(new Qr());
+
+        }*/
     }
 }
